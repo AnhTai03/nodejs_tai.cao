@@ -15,7 +15,10 @@ let getHomePage = (req, res) => {
         address: row.address,
       });
     });
-    return res.render('test/index.ejs', { dataUser: JSON.stringify(data) });
+    return res.render('test/index.ejs', {
+      dataUser: data,
+      test: 'con chó này thật là tuyệt vời',
+    });
   });
 };
 
